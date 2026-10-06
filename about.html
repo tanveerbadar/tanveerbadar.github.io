@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
     <title>Tanveer's Ramblings - About</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -10,15 +12,15 @@
 <link href="assets/css/themes.css" rel="stylesheet">
 <link href="assets/css/font.css" rel="stylesheet">
 <link href="assets/css/styles.css" rel="stylesheet">
-<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/images/favicon.png" type="image/png">
 
 </head>
 
 <body>
     <header class="roboto-bold">
+        <a class="site-name" href="/">Tanveer's Ramblings</a>
         <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="">Blog</a></li>
                 <li class="active"><a href="about.html">About</a></li>
@@ -37,9 +39,6 @@
             good .net and C++ programmer to performing QA, elucidating requirements and managing projects and teams.</p>
     </main>
     <aside>
-    <div class="container">
-        <!-- <img title="Your truly" src="assets/images/self.jpg" /> -->
-    </div>
     <p class="roboto-regular">Karachi, Pakistan <br /><time>GMT +5:00</time></p>
     <ul>
         <li><a href="https://twitter.com/tanveerbadar" target="_blank" rel="author" referrerpolicy="no-referrer"><img
@@ -51,7 +50,9 @@
         </li>
     </ul>
 </aside>
-    <footer class="roboto-regular-italic">All rights reserved. &copy;</footer>
+    <footer class="roboto-regular-italic">&copy; 2005-<span id="year">2026</span> Tanveer Badar - All rights reserved.
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script></footer>
+
     <sidebar>
     <h3 class="roboto-bold">Acknowledgements:</h3>
     <p class="roboto-regular">Twitter icon copied from <a href="https://dribbble.com/designbolts"
