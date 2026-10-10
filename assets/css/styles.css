@@ -147,7 +147,7 @@ sidebar>ul>li:last-child {
     padding-block-start: 0.5em;
 }
 
-@media screen and (max-width: 386px) {
+@media screen and (max-width: 400px) {
     body {
         grid-template-areas:
             "header header"
