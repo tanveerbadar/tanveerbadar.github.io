@@ -146,3 +146,67 @@ sidebar>ul>li {
 sidebar>ul>li:last-child {
     padding-block-start: 0.5em;
 }
+
+@media screen and (max-width: 385px) {
+    body {
+        grid-template-areas:
+            "header header"
+            "aside main"
+            "sidebar sidebar"
+            "footer footer";
+        grid-template-rows: 10em 1fr auto 2em;
+        grid-template-columns: 10em 1fr;
+    }
+
+    header a {
+        font-size: smaller;
+    }
+
+    nav {
+        padding-left: 1em;
+    }
+
+    nav>ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav>ul>li {
+        font-size: medium;
+        padding: 0;
+    }
+
+    header>nav {
+        width: fit-content;
+        min-width: 5em;
+        grid-area: aside;
+        grid-column: 1;
+    }
+
+    main {
+        grid-row: 1/ span 2;
+        padding-top: 0;
+    }
+
+    main>ul {
+        margin-block: 0;
+    }
+
+    aside {
+        padding-block-start: 1em;
+    }
+
+    sidebar {
+        font-size: smaller;
+        padding: 0;
+        padding-left: 1em;
+    }
+
+    sidebar>h3 {
+        margin-block: 0;
+    }
+
+    sidebar>ul {
+        margin-block: 0;
+    }
+}
